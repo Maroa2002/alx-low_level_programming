@@ -8,10 +8,6 @@
 
 int main(void)
 {
-	/*string initialization*/
-	char str[] = ""Programming is like building a multilingual puzzle";
-
-	puts(str);/*writing string to stdout*/
-
+	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
