@@ -13,3 +13,22 @@ You can only use the putchar function (every other function (printf, puts, etcâ€
 * Task 3:
 Write a program that prints the alphabet in lowercase, and then in uppercase, followed by a new line.You can only use the putchar function (every other function (printf, puts, etcâ€¦) is forbidden)
 
+* Task 4:
+Write a program that prints the alphabet in lowercase, followed by a new line.Print all the letters except q and e
+
+* Task 5:
+Write a program that prints all single digit numbers of base 10 starting from 0, followed by a new line.
+
+* Task 6:
+Write a program that prints all single digit numbers of base 10 starting from 0, followed by a new line.You are not allowed to use any variable of type char.
+
+* Task 7:
+Write a program that prints the lowercase alphabet in reverse, followed by a new line.
+
+* Task 8:
+Write a program that prints all the numbers of base 16 in lowercase, followed by a new line.
+
+* Task 9:
+Write a program that prints all possible combinations of single-digit numbers.
+
+
