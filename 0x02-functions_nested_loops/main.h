@@ -18,4 +18,8 @@ int _islower(int c);
 
 /* _isalpha prototype */
 int _isalpha(int c);
+
+/* print_sign prototype */
+int print_sign(int n);
+
 #endif
