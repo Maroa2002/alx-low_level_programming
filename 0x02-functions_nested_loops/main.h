@@ -24,4 +24,10 @@ int print_sign(int n);
 
 /* _abs prototype */
 int _abs(int);
+
+/* jack_bauer prototype */
+void jack_bauer(void);
+
+/* add prototype */
+int add(int, int);
 #endif
