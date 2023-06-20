@@ -13,4 +13,6 @@ void print_alphabet_x10(void);
 /* print_last_digit prototype */
 int print_last_digit(int);
 
+/* _islower prototype */
+int _islower(int c);
 #endif
