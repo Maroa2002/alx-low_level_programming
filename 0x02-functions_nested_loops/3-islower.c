@@ -4,7 +4,9 @@
 /**
   * _islower - checks for lowercase character
   *
-  * Return: Always 1 (if lowercase), 0 (otherwise)
+  * @c: The character to be checked
+  * Return: On Success 1.
+  * On error, 0 is returned
   **/
 
 int _islower(int c)
@@ -12,8 +14,6 @@ int _islower(int c)
 	if (islower(c))
 	{
 		return (1);
-	} else
-	{
-		return (0);
 	}
+		return (0);
 }
