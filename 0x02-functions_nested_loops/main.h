@@ -15,4 +15,7 @@ int print_last_digit(int);
 
 /* _islower prototype */
 int _islower(int c);
+
+/* _isalpha prototype */
+int _isalpha(int c);
 #endif
