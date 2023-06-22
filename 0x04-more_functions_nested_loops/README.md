@@ -17,4 +17,8 @@ FYI: The standard library provides a similar function: isdigit. Run man isdigit 
 * Task 2:Write a function that multiplies two integers.
 	* Prototype: int mul(int a, int b);
 
+* Task 3:Write a function that prints the numbers, from 0 to 9, followed by a new line.
+	* Prototype: void print_numbers(void);
+	* You can only use _putchar twice in your code
+
 
