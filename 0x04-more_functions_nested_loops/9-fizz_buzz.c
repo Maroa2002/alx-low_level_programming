@@ -32,6 +32,7 @@ int main(void)
 		if (count != 100)
 		{
 			printf(" ");
+		}
 	}
 	printf("\n");
 
