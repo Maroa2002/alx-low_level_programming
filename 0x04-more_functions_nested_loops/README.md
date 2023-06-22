@@ -26,4 +26,8 @@ FYI: The standard library provides a similar function: isdigit. Run man isdigit 
 	* Do not print 2 and 4
 	* You can only use _putchar twice in your code
 
+* Task 5:Write a function that prints 10 times the numbers, from 0 to 14, followed by a new line.
+	* Prototype: void more_numbers(void);
+	* You can only use _putchar three times in your code
+
 
