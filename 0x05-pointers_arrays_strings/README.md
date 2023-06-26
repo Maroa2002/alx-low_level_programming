@@ -28,6 +28,11 @@ FYI: The standard library provides a similar function: puts. Run man puts to lea
 * 5: Write a function that reverses a string.
 	* Prototype: void rev_string(char *s);
 
+
+* 6: Write a function that prints every other character of a string, starting with the first character, followed by a new line.
+	* Prototype: void puts2(char *str);
+
+
 * 8: Write a function that prints n elements of an array of integers, followed by a new line.
 	* Prototype: void print_array(int *a, int n);
 	* where n is the number of elements of the array to be printed
