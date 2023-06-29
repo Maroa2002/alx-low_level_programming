@@ -33,4 +33,8 @@ FYI: The standard library provides a similar function: strcmp. Run man strcmp to
 	* Where n is the number of elements of the array
 
 
+* 5: Write a function that changes all lowercase letters of a string to uppercase.
+	* Prototype: char *string_toupper(char *);
+
+
 
