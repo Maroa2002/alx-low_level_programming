@@ -2,7 +2,7 @@
 
 * 0: *A library is not a luxury but one of the necessities of life*
 
-Create the static library libmy.a containing all the functions listed below:
+* Create the static library libmy.a containing all the functions listed below:
 	* int _putchar(char c);
 	* int _islower(int c);
 	* int _isalpha(int c);
