@@ -3,23 +3,24 @@
 #include <ctype.h>
 
 /**
-  * nondigits - checks for non-digits
+  * is_digit - checks for non-digits
   * @number: input number
   * Return: integer
   **/
 
-int nondigits(char *number)
+int is_digit(char *number)
 {
 	int i;
 
 	for (i = 0; number[i] != '\0'; i++)
 	{
-		if (!isdigit(number[i]))
+		if (!(number[i] >= '0' && number[i] <= '9'))
 		{
-			return (1);
+			return (0);
 		}
+
 	}
-	return (0);
+	return (1);
 }
 
 /**
@@ -44,14 +45,14 @@ int main(int argc, char **argv)
 
 		for (i = 1; i < argc; i++)
 		{
-			if (nondigits(argv[i]))
+			if (is_digit(argv[i]))
 			{
-				printf("Error\n");
-				return (1);
+				sum += atoi(argv[i]);
 			}
 			else
 			{
-				sum += atoi(argv[i]);
+				printf("Error\n");
+				return (1);
 			}
 		}
 		printf("%d\n", sum);
