@@ -10,12 +10,23 @@
 
 int main(int argc, char **argv)
 {
-	if (argc != 3)
+	int product, i;
+
+	if (argc > 1)
+	{
+		product = 1;
+
+		for (i = 1; i < argc; i++)
+		{
+			product *= atoi(argv[i]);
+		}
+		printf("%d\n", product);
+	}
+	else
 	{
 		printf("Error\n");
 		return (1);
 	}
-	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 
 	return (0);
 }
