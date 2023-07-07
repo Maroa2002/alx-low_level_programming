@@ -33,6 +33,11 @@ int main(int argc, char **argv)
 {
 	int sum, i;
 
+	if (argc == 1)
+	{
+		printf("0\n");
+		return (1);
+	}
 	if (argc > 1)
 	{
 		sum = 0;
@@ -51,11 +56,4 @@ int main(int argc, char **argv)
 		}
 		printf("%d\n", sum);
 	}
-	else
-	{
-		printf("0\n");
-		return (1);
-	}
-
-	return (0);
 }
