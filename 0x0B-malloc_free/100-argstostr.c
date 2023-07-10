@@ -26,6 +26,9 @@ char *argstostr(int ac, char **av)
 		length += strlen(av[i]);
 	}
 
+	/* adding space for newline character and null terminator */
+	length += (ac + 1);
+
 	/* allocating memory for the concatenated string */
 	str = malloc(sizeof(char) * length);
 	if (str == NULL)
