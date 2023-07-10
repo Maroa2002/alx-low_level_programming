@@ -13,23 +13,25 @@
 char *create_array(unsigned int size, char c)
 {
 	char *s;
+	unsigned int i;
 
-	if (size == 0)
+	if (size <= 0)
 	{
 		return (NULL);
 	}
-	while (1)
+
+	s = malloc(sizeof(*s) * size + 1); /* add 1 for the null terminator */
+
+	if (s == NULL)
 	{
-		s = malloc(sizeof(*s) * size);
-		if (s == NULL)
-		{
-			return (NULL);
-		}
-		else
-		{
-			s[0] = c;
-			return (s);
-		}
+		return (NULL);
 	}
-	free(s);
+
+	for (i = 0; i < size; i++)
+	{
+		s[i] = c;
+	}
+	s[size] = '\0'; /* adding the null terminator at end of array */
+
+	return (s);
 }
