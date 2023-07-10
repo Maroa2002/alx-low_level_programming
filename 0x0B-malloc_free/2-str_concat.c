@@ -29,7 +29,8 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	str_cat = strcat(s1, s2);
+	strcpy(str_cat, s1); /* copies s1 into str_cat */
+	strcat(str_cat, s2); /* concatenates s2 to str_cat */
 
 	return (str_cat);
 }
