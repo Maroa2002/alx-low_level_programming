@@ -3,14 +3,15 @@
 
 /**
   * print_opcodes - print opcodes
-  * @numbytes: num_bytes
+  * @num_bytes: number of bytes
   * Return: void
   **/
 
 void print_opcodes(int num_bytes)
 {
-	unsigned char *opcodes = (unsigned char *)&print_opcodes;
+	unsigned char *opcodes;
 
+	opcodes = (unsigned char *)&print_opcodes;
 	for (int i = 0; i < num_bytes; i++)
 	{
 		printf("%02x ", opcodes[i]);
