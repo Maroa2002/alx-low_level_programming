@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int num_bytes, i;
-	int (*address)(int, char **) = main;
+	unsigned char *address;
 	unsigned char opcode;
 
 	if (argc != 2)
@@ -28,19 +28,16 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 
+	address = (unsigned char *)main;
 	for (i = 0; i < num_bytes; i++)
 	{
-		opcode = *(unsigned char *)address;
+		opcode = address[i];
 		printf("%.2x", opcode);
 
-		if (i == (num_bytes - 1))
+		if (i < (num_bytes - 1))
 		{
-			continue;
+			printf(" ");
 		}
-
-		printf(" ");
-
-		i++;
 	}
 
 	printf("\n");
