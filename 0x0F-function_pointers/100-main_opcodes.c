@@ -2,25 +2,6 @@
 #include <stdlib.h>
 
 /**
-  * print_opcodes - print opcodes
-  * @num_bytes: number of bytes
-  * Return: void
-  **/
-
-void print_opcodes(int num_bytes)
-{
-	unsigned char *opcodes;
-
-	opcodes = (unsigned char *)&print_opcodes;
-	for (int i = 0; i < num_bytes; i++)
-	{
-		printf("%02x ", opcodes[i]);
-	}
-
-	printf("\n");
-}
-
-/**
   * main - entry point
   * @argc: argument count
   * @argv: argument vector
@@ -29,21 +10,39 @@ void print_opcodes(int num_bytes)
 
 int main(int argc, char *argv[])
 {
+	int num_bytes, i;
+	int (*address)(int, char **) = main;
+	unsigned char opcode;
+
 	if (argc != 2)
 	{
 		printf("Error\n");
-		return (1);
+		exit(1);
 	}
 
-	int num_bytes = atoi(argv[1]);
+	num_bytes = atoi(argv[1]);
 
 	if (num_bytes < 0)
 	{
 		printf("Error\n");
-		return (2);
+		exit(2);
 	}
 
-	print_opcodes(num_bytes);
+	for (i = 0; i < num_bytes; i++)
+	{
+		opcode = *(unsigned char *)address;
+		printf("%.2x", opcode);
 
+		if (i == (num_bytes - 1))
+		{
+			continue;
+		}
+
+		printf(" ");
+
+		i++;
+	}
+
+	printf("\n");
 	return (0);
 }
