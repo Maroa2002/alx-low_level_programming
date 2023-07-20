@@ -55,7 +55,7 @@ void print_float(va_list list)
 void print_all(const char * const format, ...)
 {
 	unsigned int i = 0, j = 0;
-	char *separator;
+	char *separator = "";
 	va_list list;
 
 	datatype storage[] = {{'c', print_char},
@@ -76,6 +76,7 @@ void print_all(const char * const format, ...)
 			}
 			i++;
 		}
+		i = 0;
 		j++;
 	}
 	printf("\n");
