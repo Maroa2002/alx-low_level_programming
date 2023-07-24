@@ -51,9 +51,18 @@ int print_format(char specifier, va_list ap)
 	{
 		count += print_str(va_arg(ap, char *));
 	}
+	else if (specifier == 'd' || specifier == 'i')
+	{
+		count += print_digit(va_arg(ap, int));
+	}
 	else if (specifier == '%')
 	{
 		count += write(1, "%", 1);
+	}
+	else
+	{
+		print_char('%');
+		write(1, &specifier, 1);
 	}
 
 	return (count);
