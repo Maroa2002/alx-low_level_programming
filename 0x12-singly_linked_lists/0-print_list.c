@@ -12,9 +12,6 @@ size_t print_list(const list_t *h)
 	size_t count = 0;
 	const list_t *ptr = h;
 
-	if (ptr == NULL)
-		return (NULL);
-
 	while (ptr != NULL)
 	{
 		if (ptr->str == NULL)
