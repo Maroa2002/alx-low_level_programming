@@ -13,11 +13,6 @@ size_t print_list(const list_t *h)
 	size_t count;
 	const list_t *current_node;
 
-	if (h == NULL)
-	{
-		return (0);
-	}
-
 	current_node = h;
 	count = 0;
 	while (current_node != NULL)
