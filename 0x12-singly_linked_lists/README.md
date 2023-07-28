@@ -5,3 +5,7 @@
 * 2: a function that adds a new node at the beginning of a list_t list.
 * 3: a function that adds a new node at the end of a list_t list.
 * 4: a function that frees a list_t list.
+
+**Advanced tasks**
+* 5: a function that prints before the execution of main function
+* 6: a 64-bit program in assembly
