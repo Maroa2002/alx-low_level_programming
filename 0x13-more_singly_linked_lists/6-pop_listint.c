@@ -9,18 +9,16 @@
 
 int pop_listint(listint_t **head)
 {
-	listint_t *tmp, *current;
+	listint_t *temp;
 	int head_data;
 
 	if (*head == NULL)
 		return (0);
 
-	current = *head;
-	tmp = current; /* store address of head node */
-	head_data = tmp->n; /* store the data of head node */
-	current = current->next; /* point head to next node */
-
-	free(tmp); /* free head node */
+	temp = *head; /* store address of head node */
+	head_data = temp->n; /* store the data of head node */
+	*head = (*head)->next; /* point head to next node */
+	free(temp); /* free head node */
 
 	return (head_data);
 }
