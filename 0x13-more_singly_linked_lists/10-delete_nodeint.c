@@ -41,7 +41,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	if (*head == NULL) /* checking for empty list */
 		return (-1);
 
-	if (index > size) /* checking for invalid input */
+	if (index >= size) /* checking for invalid input */
 		return (-1);
 
 	temp = *head;
