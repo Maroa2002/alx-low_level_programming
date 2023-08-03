@@ -25,7 +25,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 }
 
 /**
-  * other method
+  * other method - another way
   * unsigned long int mask;
   * mask = 1UL << index;
   * *n = *n | mask
