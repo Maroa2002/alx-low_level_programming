@@ -14,7 +14,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 
 	/* bytes to bits conversion */
 	size = sizeof(unsigned long int) * 8;
-	if (index >= size) /* index out of range */
+	if (index > size) /* index out of range */
 		return (-1);
 
 	/* develop mask with the specified index being 1 and the rest 0 */
