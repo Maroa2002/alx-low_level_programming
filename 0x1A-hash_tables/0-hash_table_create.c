@@ -22,7 +22,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 
 	table->size = size;
 	/* allocate memory for array member of table */
-	table->array = malloc(sizeof(hash_node_t *) * table->size);
+	table->array = malloc(sizeof(hash_node_t *) * size);
 	if (!table->array)
 	{
 		free(table);
@@ -30,7 +30,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	}
 
 	/* sets all the arrays to NULL */
-	for (i = 0; i < table->size; i++)
+	for (i = 0; i < size; i++)
 		table->array[i] = NULL;
 
 	return (table);
