@@ -1,4 +1,4 @@
-#include "hash_taables.h"
+#include "hash_tables.h"
 
 /**
   * hash_table_get - retrieves a alue associated with a key
